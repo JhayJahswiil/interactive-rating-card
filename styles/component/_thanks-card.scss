@@ -1,0 +1,52 @@
+@use '../abstract/colors' as c;
+@use '../abstract/mixins' as m;
+@use '../abstract/typography' as t;
+
+.thanks{
+    display: none;
+    margin-top: 15px;
+
+    &__img{
+        @include m.flexbox;
+        // border: 2px solid red;
+        & img{
+            width: 120px;
+        }
+    }
+
+    &__rating-output{
+        margin: 20px auto;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: c.$dark-blue;
+        width: 80%;
+        border: 0.5px solid c.$medium-grey;
+        font-size: 13px;
+
+        & p{
+            color: c.$orange;
+        }
+
+        @include m.media(small-mobile){
+            width: 100%;
+        }
+    }
+
+    &__txt{
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 10px;
+
+        & h3{
+            color: c.$white;
+        }
+
+        & p{
+            color: c.$medium-grey;
+            margin-top: 7px;
+            font-size: 12px;
+            // padding: 0 2px;
+        }
+    }
+}

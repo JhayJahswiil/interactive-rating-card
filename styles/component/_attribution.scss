@@ -1,0 +1,17 @@
+@use '../abstract/mixins' as m;
+
+
+footer{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+
+        & a{
+            color: #3e52a3;
+        }
+    }
+}

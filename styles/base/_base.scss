@@ -1,0 +1,26 @@
+@use '../abstract/mixins' as m;
+@use '../abstract/typography' as t;
+@use '../abstract/colors' as c;
+
+// FONT IMPORT
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+// BASE
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: t.$font-family;
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    @include m.flexbox($direction: column);
+    background-color: c.$very-dark-blue;
+}

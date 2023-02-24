@@ -1,0 +1,104 @@
+@use '../abstract/colors' as c;
+@use '../abstract/mixins' as m;
+@use '../abstract/typography' as t;
+
+.cards__sec{
+    width: 300px;
+    border-radius: 10px;
+    background-color: c.$dark-blue;
+    padding: 12px;
+    // border: 2px solid red;
+
+    .rating{
+        margin-top: 10px;
+        // display: none;
+        // border: 2px solid yellow;
+
+        &__star-icon{
+            background-color: c.$dark-blue;
+            @include m.flexbox($display: inline-flex);
+            border-radius: 30px;
+            padding: 6px;
+            // border: 2px solid rgb(59, 59, 59);
+
+            & img{
+                width: 17px;
+            }
+        }
+
+        &__text{
+            margin-top: 15px;
+
+            & h3{
+                color: c.$white;
+            }
+
+            & p{
+                color: c.$medium-grey;
+                margin-top: 15px;
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+
+        &__nums{
+            margin-top: 20px;
+
+            & ul{
+                list-style: none;
+                @include m.flexbox($justify: space-between);
+                
+                & li{
+                    @include m.flexbox;
+                    padding: 11px 17px;
+                    background-color: c.$medium-grey;
+                    color: c.$light-grey;
+                    border-radius: 50px;
+                    // border: 2px solid red;
+                    text-align: center;
+
+                    &:hover{
+                        background-color: c.$orange;
+                        color: c.$white;
+                        cursor: pointer;
+                    }
+
+                    @include m.media(small-mobile){
+                        padding: 15px 10px;
+                    }
+                }
+
+                @include m.media(small-mobile){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 6px;
+                    align-content: center;
+                }
+            }
+        }
+
+        &__button{
+            margin-top: 30px;
+            padding-bottom: 10px;
+
+            & button{
+                width: 100%;
+                padding: 7px;
+                background-color: c.$orange;
+                color: c.$white;
+                border: none;
+                border-radius: 10px;
+                font-size: t.$p-size;
+
+                &:hover{
+                    background-color: c.$white;
+                    color: c.$orange;
+                }
+            }
+        }
+    }
+
+    @include m.media(mobile){
+        width: 90%;
+    }
+}

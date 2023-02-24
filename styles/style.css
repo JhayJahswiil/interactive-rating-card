@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #121417;
+}
+
+.cards__sec {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #252d37;
+  padding: 12px;
+}
+.cards__sec .rating {
+  margin-top: 10px;
+}
+.cards__sec .rating__star-icon {
+  background-color: #252d37;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 30px;
+  padding: 6px;
+}
+.cards__sec .rating__star-icon img {
+  width: 17px;
+}
+.cards__sec .rating__text {
+  margin-top: 15px;
+}
+.cards__sec .rating__text h3 {
+  color: #ffffff;
+}
+.cards__sec .rating__text p {
+  color: #7c8798;
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 17px;
+}
+.cards__sec .rating__nums {
+  margin-top: 20px;
+}
+.cards__sec .rating__nums ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.cards__sec .rating__nums ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 11px 17px;
+  background-color: #7c8798;
+  color: #959eac;
+  border-radius: 50px;
+  text-align: center;
+}
+.cards__sec .rating__nums ul li:hover {
+  background-color: #fb7413;
+  color: #ffffff;
+  cursor: pointer;
+}
+@media screen and (max-width: 280px) {
+  .cards__sec .rating__nums ul li {
+    padding: 15px 10px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .cards__sec .rating__nums ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    align-content: center;
+  }
+}
+.cards__sec .rating__button {
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.cards__sec .rating__button button {
+  width: 100%;
+  padding: 7px;
+  background-color: #fb7413;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.cards__sec .rating__button button:hover {
+  background-color: #ffffff;
+  color: #fb7413;
+}
+@media screen and (max-width: 320px) {
+  .cards__sec {
+    width: 90%;
+  }
+}
+
+.thanks {
+  display: none;
+  margin-top: 15px;
+}
+.thanks__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.thanks__img img {
+  width: 120px;
+}
+.thanks__rating-output {
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #252d37;
+  width: 80%;
+  border: 0.5px solid #7c8798;
+  font-size: 13px;
+}
+.thanks__rating-output p {
+  color: #fb7413;
+}
+@media screen and (max-width: 280px) {
+  .thanks__rating-output {
+    width: 100%;
+  }
+}
+.thanks__txt {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.thanks__txt h3 {
+  color: #ffffff;
+}
+.thanks__txt p {
+  color: #7c8798;
+  margin-top: 7px;
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: #3e52a3;
+}/*# sourceMappingURL=style.css.map */
