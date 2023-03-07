@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Screenshot.jpg)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [frontend-mentors-interactive-rating](https://frontend-mentors-interactive-rating.netlify.app/)
+- Live Site URL: [frontend-mentors-interactive-rating](https://frontend-mentors-interactive-rating.netlify.app/)
 
 ## My process
 
